@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dH9xyWfLHP9l0Q+A6lVn2XXui0iurKyMDXMnkxuuN5UBC8inzIjiS1VgYM+yYGCMYAT+Wb/E9QY5roCouY1CeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pedro\\source\\repos\\CrudUsuario\\CrudUsuario\\CrudUsuario.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

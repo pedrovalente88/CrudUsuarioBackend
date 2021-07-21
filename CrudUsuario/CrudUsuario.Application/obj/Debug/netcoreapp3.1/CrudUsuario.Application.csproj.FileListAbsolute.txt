@@ -1,0 +1,14 @@
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Application.deps.json
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Application.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Application.pdb
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Domain.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Domain.pdb
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.pdb
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.csprojAssemblyReference.cache
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.AssemblyInfoInputs.cache
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.AssemblyInfo.cs
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.csproj.CoreCompileInputs.cache
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.csproj.CopyComplete
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Application\obj\Debug\netcoreapp3.1\CrudUsuario.Application.pdb

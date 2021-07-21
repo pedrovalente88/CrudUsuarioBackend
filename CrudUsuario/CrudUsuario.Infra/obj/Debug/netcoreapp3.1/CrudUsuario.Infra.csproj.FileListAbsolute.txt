@@ -1,0 +1,15 @@
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.deps.json
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.runtimeconfig.json
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.runtimeconfig.dev.json
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Infra.pdb
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Domain.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\bin\Debug\netcoreapp3.1\CrudUsuario.Domain.pdb
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.csprojAssemblyReference.cache
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.AssemblyInfoInputs.cache
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.AssemblyInfo.cs
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.csproj.CoreCompileInputs.cache
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.csproj.CopyComplete
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.dll
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.pdb
+C:\Users\pedro\source\repos\CrudUsuario\CrudUsuario.Infra\obj\Debug\netcoreapp3.1\CrudUsuario.Infra.genruntimeconfig.cache
