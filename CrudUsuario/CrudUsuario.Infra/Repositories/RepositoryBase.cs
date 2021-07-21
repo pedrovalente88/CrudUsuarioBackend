@@ -22,7 +22,7 @@ namespace CrudUsuario.Infra.Repositories
             return obj;
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetById(long id)
         {
             return _context.Set<TEntity>().Find(id);
         }

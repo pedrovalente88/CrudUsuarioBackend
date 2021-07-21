@@ -27,5 +27,16 @@ namespace CrudUsuario.Application.DTOs
             DataNascimento = usuario.DataNascimento;
             EscolaridadeId = usuario.Escolaridade;
         }
+
+        public static Usuario Transformation(UsuarioDTO usuarioDTO)
+        {
+            return new Usuario(
+                usuarioDTO.Nome,
+                usuarioDTO.Sobrenome,
+                usuarioDTO.Email,
+                usuarioDTO.DataNascimento,
+                usuarioDTO.EscolaridadeId
+                );
+        }
     }
 }

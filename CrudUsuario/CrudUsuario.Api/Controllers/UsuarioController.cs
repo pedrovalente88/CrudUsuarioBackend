@@ -26,5 +26,33 @@ namespace CrudUsuario.Api.Controllers
         {
             return _usuarioAppService.GetUsuarios();
         }
+
+        [HttpGet]
+        [Route("GetUsuarioById")]
+        public UsuarioDTO GetUsuarioById(long id)
+        {
+            return _usuarioAppService.GetUsuarioById(id);
+        }
+
+        [HttpPost]
+        [Route("Criar")]
+        public ActionResult<RetornoPadraoDTO> Criar(UsuarioDTO usuarioDTO)
+        {
+            return _usuarioAppService.Criar(usuarioDTO);
+        }
+
+        [HttpPut]
+        [Route("Editar")]
+        public ActionResult<RetornoPadraoDTO> Editar(UsuarioDTO usuarioDTO)
+        {
+            return _usuarioAppService.Editar(usuarioDTO);
+        }
+
+        [HttpDelete]     
+        [Route("Deletar")]
+        public ActionResult<RetornoPadraoDTO> Deletar(long id)
+        {
+            return _usuarioAppService.Deletar(id);
+        }
     }
 }

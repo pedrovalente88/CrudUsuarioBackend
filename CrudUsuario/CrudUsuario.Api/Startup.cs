@@ -45,6 +45,8 @@ namespace CrudUsuario.Api
 
             services.AddControllers();
 
+            services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
+
             services.AddSwaggerGen();
         }
 
@@ -57,6 +59,8 @@ namespace CrudUsuario.Api
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowAll");
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger(c =>

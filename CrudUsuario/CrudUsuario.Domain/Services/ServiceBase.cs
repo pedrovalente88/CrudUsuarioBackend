@@ -20,7 +20,7 @@ namespace CrudUsuario.Domain.Services
             _repository.Add(obj);
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetById(long id)
         {
             return _repository.GetById(id);
         }

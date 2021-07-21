@@ -1,6 +1,7 @@
 ﻿using CrudUsuario.Application.DTOs;
 using CrudUsuario.Application.Interfaces;
 using CrudUsuario.Domain.Interfaces.Services;
+using CrudUsuario.Domain.Statics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,86 @@ namespace CrudUsuario.Application.Services
             var usuarios = _usuarioService.GetAll();
             var resultado = usuarios.Select(u => new UsuarioDTO(u));
             return resultado;
+        }
+
+        public UsuarioDTO GetUsuarioById(long id)
+        {
+            var usuario = _usuarioService.GetById(id);
+            var resultado = new UsuarioDTO(usuario);
+            return resultado;
+        }
+
+        public RetornoPadraoDTO Criar(UsuarioDTO usuarioDTO)
+        {
+            try
+            {
+                var usuario = UsuarioDTO.Transformation(usuarioDTO);
+                _usuarioService.Add(usuario);
+
+                return new RetornoPadraoDTO("Usuário incluído com sucesso!", RetornoPadraoStatusStatic.Sucesso.Id);
+            }
+            catch (ArgumentException ex)
+            {
+                return new RetornoPadraoDTO(ex.Message, RetornoPadraoStatusStatic.Alerta.Id);
+            }
+            catch (Exception ex)
+            {
+                return new RetornoPadraoDTO(ex.Message, RetornoPadraoStatusStatic.Erro.Id);
+            }
+            
+        }
+
+        public RetornoPadraoDTO Editar(UsuarioDTO usuarioDTO)
+        {
+            try
+            {
+                var usuario = _usuarioService.GetById(usuarioDTO.Id);
+
+                if (usuario == null)
+                    throw new Exception("Usuário não encontrado!");
+
+                usuario.Update(usuarioDTO.Nome,
+                               usuarioDTO.Sobrenome,
+                               usuarioDTO.Email,
+                               usuarioDTO.DataNascimento,
+                               usuarioDTO.EscolaridadeId);
+
+                _usuarioService.Update(usuario);
+
+                return new RetornoPadraoDTO("Usuário atualizado com sucesso!", RetornoPadraoStatusStatic.Sucesso.Id);
+            }
+            catch (ArgumentException ex)
+            {
+                return new RetornoPadraoDTO(ex.Message, RetornoPadraoStatusStatic.Alerta.Id);
+            }
+            catch (Exception ex)
+            {
+                return new RetornoPadraoDTO(ex.Message, RetornoPadraoStatusStatic.Erro.Id);
+            }            
+        }               
+
+        public RetornoPadraoDTO Deletar(long id)
+        {
+            try
+            {
+                var usuario = _usuarioService.GetById(id);
+
+                if (usuario == null)
+                    throw new Exception("Usuário não encontrado!");
+
+                _usuarioService.Remove(usuario);
+
+                return new RetornoPadraoDTO("Usuário removido com sucesso!", RetornoPadraoStatusStatic.Sucesso.Id);
+            }
+            catch (ArgumentException ex)
+            {
+                return new RetornoPadraoDTO(ex.Message, RetornoPadraoStatusStatic.Alerta.Id);
+            }
+            catch (Exception ex)
+            {
+                return new RetornoPadraoDTO(ex.Message, RetornoPadraoStatusStatic.Erro.Id);
+            }
+            
         }
     }
 }
