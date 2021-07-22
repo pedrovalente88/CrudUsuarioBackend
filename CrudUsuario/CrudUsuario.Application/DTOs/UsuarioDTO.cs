@@ -9,33 +9,41 @@ namespace CrudUsuario.Application.DTOs
 {
     public class UsuarioDTO
     {
-        public long Id { get; private set; }       
-        public string Nome { get; private set; }
-        public string Sobrenome { get; private set; }
-        public string Email { get; private set; }
-        public DateTime DataNascimento { get; private set; }
-        public short EscolaridadeId { get; private set; }
-        public string NomeSobrenome => string.Format("{0} {1}", Nome, Sobrenome);
-        public string Escolaridade => EnumHelper.GetDescription((EscolaridadeEnum)EscolaridadeId);
+        public long id { get; set; }       
+        public string nome { get; set; }
+        public string sobrenome { get; set; }
+        public string email { get; set; }
+        public DateTime dataNascimento { get; set; }
+        public short escolaridadeId { get; set; }
+        public string nomeSobrenome => string.Format("{0} {1}", nome, sobrenome);
+        public string escolaridade => EnumHelper.GetDescription((EscolaridadeEnum)escolaridadeId);
 
-        public UsuarioDTO(Usuario usuario)
+        //public UsuarioDTO()
+        //{
+
+        //}
+
+        public static UsuarioDTO Transformation(Usuario usuario)
         {
-            Id = usuario.Id;
-            Nome = usuario.Nome;
-            Sobrenome = usuario.Sobrenome;
-            Email = usuario.Email;
-            DataNascimento = usuario.DataNascimento;
-            EscolaridadeId = usuario.Escolaridade;
+            return new UsuarioDTO
+            {
+                id = usuario.Id,
+                nome = usuario.Nome,
+                sobrenome = usuario.Sobrenome,
+                email = usuario.Email,
+                dataNascimento = usuario.DataNascimento,
+                escolaridadeId = usuario.Escolaridade,
+            };            
         }
 
         public static Usuario Transformation(UsuarioDTO usuarioDTO)
         {
             return new Usuario(
-                usuarioDTO.Nome,
-                usuarioDTO.Sobrenome,
-                usuarioDTO.Email,
-                usuarioDTO.DataNascimento,
-                usuarioDTO.EscolaridadeId
+                usuarioDTO.nome,
+                usuarioDTO.sobrenome,
+                usuarioDTO.email,
+                usuarioDTO.dataNascimento,
+                usuarioDTO.escolaridadeId
                 );
         }
     }

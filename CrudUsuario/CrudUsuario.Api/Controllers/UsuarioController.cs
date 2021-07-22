@@ -36,21 +36,21 @@ namespace CrudUsuario.Api.Controllers
 
         [HttpPost]
         [Route("Criar")]
-        public ActionResult<RetornoPadraoDTO> Criar(UsuarioDTO usuarioDTO)
+        public ActionResult<RetornoPadraoDTO> Criar([FromBody] UsuarioDTO usuarioDTO)
         {
             return _usuarioAppService.Criar(usuarioDTO);
         }
 
         [HttpPut]
         [Route("Editar")]
-        public ActionResult<RetornoPadraoDTO> Editar(UsuarioDTO usuarioDTO)
+        public ActionResult<RetornoPadraoDTO> Editar([FromBody] UsuarioDTO usuarioDTO)
         {
             return _usuarioAppService.Editar(usuarioDTO);
         }
 
         [HttpDelete]     
         [Route("Deletar")]
-        public ActionResult<RetornoPadraoDTO> Deletar(long id)
+        public ActionResult<RetornoPadraoDTO> Deletar([FromQuery] long id)
         {
             return _usuarioAppService.Deletar(id);
         }

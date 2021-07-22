@@ -21,14 +21,14 @@ namespace CrudUsuario.Application.Services
         public IEnumerable<UsuarioDTO> GetUsuarios()
         {
             var usuarios = _usuarioService.GetAll();
-            var resultado = usuarios.Select(u => new UsuarioDTO(u));
+            var resultado = usuarios.Select(u => UsuarioDTO.Transformation(u));
             return resultado;
         }
 
         public UsuarioDTO GetUsuarioById(long id)
         {
             var usuario = _usuarioService.GetById(id);
-            var resultado = new UsuarioDTO(usuario);
+            var resultado =  UsuarioDTO.Transformation(usuario);
             return resultado;
         }
 
@@ -56,16 +56,16 @@ namespace CrudUsuario.Application.Services
         {
             try
             {
-                var usuario = _usuarioService.GetById(usuarioDTO.Id);
+                var usuario = _usuarioService.GetById(usuarioDTO.id);
 
                 if (usuario == null)
                     throw new Exception("Usuário não encontrado!");
 
-                usuario.Update(usuarioDTO.Nome,
-                               usuarioDTO.Sobrenome,
-                               usuarioDTO.Email,
-                               usuarioDTO.DataNascimento,
-                               usuarioDTO.EscolaridadeId);
+                usuario.Update(usuarioDTO.nome,
+                               usuarioDTO.sobrenome,
+                               usuarioDTO.email,
+                               usuarioDTO.dataNascimento,
+                               usuarioDTO.escolaridadeId);
 
                 _usuarioService.Update(usuario);
 
