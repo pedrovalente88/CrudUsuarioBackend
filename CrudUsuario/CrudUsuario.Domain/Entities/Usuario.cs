@@ -46,10 +46,8 @@ namespace CrudUsuario.Domain.Entities
             if (DataNascimento > DateTime.Now)
                 throw new ArgumentException("A data de nascimento não pode ser maior que hoje!");
 
-            if (!Enum.IsDefined(typeof(EscolaridadeEnum), Escolaridade))
-                throw new ArgumentException("Informe a escolaridade!");
-            
-            
+            if (!Enum.IsDefined(typeof(EscolaridadeEnum), (int)Escolaridade))
+                throw new ArgumentException("Informe a escolaridade!");      
         }
     }
 }
